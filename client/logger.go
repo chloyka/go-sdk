@@ -28,11 +28,6 @@ type Logger interface {
 	Panicln(v ...any)
 }
 
-// SetLogger sets the logger for the dapr client.
-func SetLogger(l Logger) {
-	logger = l
-}
-
 // createDefaultLogger creates a default logger for the dapr client.
 // The logger is set to stdout by default, but can be disabled by setting DAPR_LOG_LEVEL to "production".
 func createDefaultLogger() {

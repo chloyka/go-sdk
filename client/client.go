@@ -55,7 +55,6 @@ const (
 )
 
 var (
-	logger               = log.New(os.Stdout, "", 0)
 	lock                 = &sync.Mutex{}
 	_             Client = (*GRPCClient)(nil)
 	defaultClient Client
