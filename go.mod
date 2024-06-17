@@ -32,3 +32,5 @@ require (
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240205150955-31a09d347014 // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 )
+
+replace github.com/dapr/dapr v1.13.4 => github.com/chloyka/dapr v0.0.0-20240614011318-a04348b0099d
