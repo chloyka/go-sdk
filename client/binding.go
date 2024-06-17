@@ -65,10 +65,10 @@ func (c *GRPCClient) InvokeBinding(ctx context.Context, in *InvokeBindingRequest
 	if err != nil {
 		event := BindingEvent{}
 		if resp != nil {
-			event.Data = resp.Data
-			event.Metadata = resp.Metadata
+			event.Data = resp.GetData()
+			event.Metadata = resp.GetMetadata()
 		}
-		
+
 		return &event, fmt.Errorf("error invoking binding %s/%s: %w", in.Name, in.Operation, err)
 	}
 
