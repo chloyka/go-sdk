@@ -33,4 +33,4 @@ require (
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 )
 
-replace github.com/dapr/dapr v1.13.4 => github.com/chloyka/dapr v0.0.0-20240617221631-3499f1f9a1e9
+replace github.com/dapr/dapr v1.13.4 => github.com/chloyka/dapr v0.0.0-20240617231124-1d8c231208fc
